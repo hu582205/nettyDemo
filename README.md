@@ -1,2 +1,2 @@
-# nettyDemo
-nettyDemo
+# NettyDemo
+Learn Netty  NettyDemo
