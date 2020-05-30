@@ -54,6 +54,8 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<HttpObject> 
 			// 对外输出流
 			ctx.writeAndFlush(response);
 			// ctx.channel().close();
+
+
 		}
 
 	}
