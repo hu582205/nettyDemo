@@ -1,4 +1,4 @@
-package io.test;
+package io.test.first;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

@@ -17,3 +17,5 @@ out/
 /gradle
 /build
 /.gradle/
+/bin/
+/.settings/
