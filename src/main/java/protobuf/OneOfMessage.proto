@@ -1,0 +1,41 @@
+syntax = "proto2";
+
+package io.test.proto.student;
+
+option optimize_for = SPEED;
+
+option java_package = "io.test.oneofproto";
+
+option java_outer_classname = "OneOfMessage";
+
+message MyMessage {
+    enum MessageType {
+        StudentType = 1;
+        SchoolType = 2;
+        TeacherType = 3;
+    }
+
+    required MessageType data_type = 1;
+
+    oneof dataBody {
+        Student student = 2;
+        School school = 3;
+        Teacher teacher = 4;
+    }
+}
+
+
+message Student {
+    required string name = 1;
+    optional int32 age = 2;
+    optional string address = 3;
+}
+
+message School {
+    required string name = 1;
+}
+
+message Teacher {
+    required string name = 1;
+    optional int32 age = 2;
+}
